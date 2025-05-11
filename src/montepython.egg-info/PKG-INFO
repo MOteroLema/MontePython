@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: montepython
+Version: 0.0.1
+Summary: Monte Carlo simulations in python
+Author: Martín Otero Lema
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: networkx
+Requires-Dist: scipy
+
+Monte Carlo simulations
+

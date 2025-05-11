@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "montepython"
+dynamic = ["version"]
+authors = [
+  { name="Martín Otero Lema" },
+]
+dependencies = [
+  "numpy",
+  "networkx",
+  "scipy"
+]
+description = "Monte Carlo simulations in python"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "montepython.__version__"}
+
+[tool.ruff]
+line-length = 88
